@@ -1,0 +1,30 @@
+# for b in range (1,6,1):
+#     for a in range (1,4001,1):
+#         if (b==1):
+#             temp = float(format(worksheet1.cell(a,b).value))
+#             like.append(temp)
+#
+#         elif (b==2):
+#             temp = float(format(worksheet1.cell(a, b).value))
+#             provokasi.append(temp)
+#
+#         elif (b==3):
+#             temp = float(format(worksheet1.cell(a, b).value))
+#             komentar.append(temp)
+#
+#         elif (b==4):
+#             temp = float(format(worksheet1.cell(a, b).value))
+#             emosi.append(temp)
+#
+#         elif (b==5):
+#             temp = float(format(worksheet1.cell(a, b).value))
+
+#             hoax.append(temp)
+#     dataTrain.append([like,provokasi,komentar,emosi,hoax])
+
+for x in range (1,4001):
+    for y in range (1,5):
+        temp = ((dataTrain[y]-like[i])+(provokasi[y]-provokasi[i])+(komentar[y]-komentar[i])+(emosi[y]-emosi[i]))
+        k = k + temp
+    k = (k**0.5)
+    validate.append(k)
